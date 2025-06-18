@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+header {
+  background: #3498db;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+h5 {
+  text-align: justify;
+  text-indent: 1.5em;
+  padding: auto;
+  padding: 10px;
+  display: grid;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+
+.img-direita {
+  width: 28vw;
+  height: 28vw;
+  border-radius: 10px;
+}
+
+.esquerda { 
+  background-color: #3498db;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}

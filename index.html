@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agricultura de Precisão</title>
+</head>
+
+<body>
+    <!-- Radios para controle de fonte (precisam estar no início do body) -->
+    <input type="radio" id="font-up" name="font-size" class="visually-hidden">
+    <input type="radio" id="font-default" name="font-size" checked class="visually-hidden">
+    <input type="radio" id="font-down" name="font-size" class="visually-hidden">
+    
+    <div class="container">
+        
+        <!-- Barra de acessibilidade -->
+        <div class="accessibility-toolbar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+            <div class="font-controls">
+                <label for="font-up" class="tool-button">
+                    <span aria-hidden="true">A+</span>
+                    <span class="sr-only">Aumentar fonte</span>
+                </label>
+
+                <label for="font-default" class="tool-button">
+                    <span aria-hidden="true">A</span>
+                    <span class="sr-only">Tamanho padrão</span>
+                </label>
+
+                <label for="font-down" class="tool-button">
+                    <span aria-hidden="true">A-</span>
+                    <span class="sr-only">Diminuir fonte</span>
+                </label>
+            </div>
+        </div>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho" role="banner">
+        <div class="logo" role="img" aria-label="Logo do site"></div>
+        <h1 class="titulo">Agricultura de Precisão</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="navegacao" role="navigation" aria-label="Navegação principal">
+        <button class="botao-nav" aria-label="Página Inicial">O que é o Agrinho</button>
+        <button class="botao-nav" aria-label="Nossos Serviços">O que é a Agricultura de Precisão</button>
+        <button class="botao-nav" aria-label="Fale Conosco">Ferramentas - Da Cidade para o Campo</button>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo" role="main">
+        <h2 id="conteudo-principal">Bem-vindo!</h2>
+        <p>Aqui você vai aprender mais sobre as tecnonogias que podem ser usadas para te auxiliar na sua plantação.</p>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape" role="contentinfo">
+        <p>&copy; 2025 Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>
