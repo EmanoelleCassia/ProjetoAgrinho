@@ -1,21 +1,31 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
-  position: relative;
-  text-align: center;
- }
-
- header {
-    background: #3498db;
-    color: white;
-    border-radius: 10px;
-    width: 80%;
-    margin: auto;
- }
+        /* O mesmo estilo da página inicial */
+        :root { /* ... */ }
+        * { /* ... */ }
+        body { /* ... */ }
+        .accessibility-toolbar { /* ... */ }
+        .font-controls { /* ... */ }
+        .tool-button { /* ... */ }
+        .visually-hidden { /* ... */ }
+        .container { /* ... */ }
+        .cabecalho { /* ... */ }
+        .cabecalho::before { /* ... */ }
+        .logo { /* ... */ }
+        .titulo { /* ... */ }
+        .navegacao { /* ... */ }
+        .botao-nav { /* ... */ }
+        .botao-nav:hover, .botao-nav.active { /* ... */ }
+        .botao-nav::after { /* ... */ }
+        .conteudo { /* ... */ }
+        .conteudo h2 { /* ... */ }
+        .intro { /* ... */ }
+        .subtitle { /* ... */ }
+        .two-columns { /* ... */ }
+        .column { /* ... */ }
+        .feature-list { /* ... */ }
+        .feature-list li::before { /* ... */ }
+        .rodape { /* ... */ }
+        .tools-grid { /* ... */ }
+        .tool-card { /* ... */ }
+        .content-image { /* ... */ }
+        @media (max-width: 900px) { /* ... */ }
+        @media (max-width: 600px) { /* ... */ }

@@ -1,21 +1,71 @@
+<!-- ferramentas.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ferramentas.css">
-    <title>Ferramentas da Agricultura de Precisão</title>
+    <title>Ferramentas | Agricultura de Precisão</title> 
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <h1>Ferramentas - Da Cidade para o Campo</h1>
-        </div>
-    </header>
-    <br>
-    <h2>Este é o início do meu documento HTML
-</body>
+    <!-- Mesma estrutura da página inicial -->
+    <input type="radio" id="font-up" name="font-size" class="visually-hidden">
+    <input type="radio" id="font-default" name="font-size" checked class="visually-hidden">
+    <input type="radio" id="font-down" name="font-size" class="visually-hidden">
 
+    <div class="container">
+        <div class="accessibility-toolbar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+            <div class="font-controls">
+                <label for="font-up" class="tool-button">A+</label>
+                <label for="font-default" class="tool-button">A</label>
+                <label for="font-down" class="tool-button">A-</label>
+            </div>
+        </div>
+
+        <header class="cabecalho" role="banner">
+            <div class="logo" role="img" aria-label="Logo do site">🌾</div>
+            <h1 class="titulo">Agricultura de Precisão</h1>
+        </header>
+
+        <nav class="navegacao" role="navigation" aria-label="Navegação principal">
+            <a href="index.html" class="botao-nav">Página Inicial</a>
+            <a href="agrinho.html" class="botao-nav">O que é o Agrinho</a>
+            <a href="agricultura.html" class="botao-nav">Agricultura de Precisão</a>
+            <a href="ferramentas.html" class="botao-nav active">Ferramentas</a>
+        </nav>
+
+        <main class="conteudo" role="main">
+            <h2>Ferramentas - Da Cidade para o Campo</h2>
+            
+            <p class="intro">A agricultura de precisão utiliza diversas tecnologias desenvolvidas originalmente para outros setores, adaptando-as às necessidades do campo.</p>
+            
+            <div class="content-image">
+                Tecnologias Modernas<br>Transformando a Agricultura
+            </div>
+            
+            <h3 class="subtitle">Alguns exemplos de ferramentas usadas na agricultura de precisão:</h3>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Coleta de dados</h3>
+                    <p>Uso de GPS, drones, sensores de solo, imagens de satélite e estações meteorológicas para obter informações detalhadas sobre o solo, plantas e clima.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>Análise inteligente</h3>
+                    <p>Softwares transformam dados em mapas e recomendações, identificando variações dentro da mesma lavoura.</p>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>Aplicação localizada</h3>
+                    <p>Máquinas automáticas ajustam a quantidade de insumos em tempo real (ex.: plantar mais sementes em zonas férteis, reduzir herbicidas onde não há pragas).</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="rodape" role="contentinfo">
+            <p>&copy; 2025 Emanoelle de Cassia - Colégio Mario Evaldo Morski</p>
+        </footer>
+    </div>
+</body>
 </html>

@@ -4,43 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./agrinho.css">
     <title>Sobre o Agrinho</title>
+    <link rel="agrinho.css" href="">
+
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <hr>
-            </hr>
-            <h1>O que é o Agrinho</h1>
-        </div>
-    </header>
+    <!-- Radios para controle de fonte -->
+    <input type="radio" id="font-up" name="font-size" class="visually-hidden">
+    <input type="radio" id="font-default" name="font-size" checked class="visually-hidden">
+    <input type="radio" id="font-down" name="font-size" class="visually-hidden">
+
     <div class="container">
-        <div class="esquerda">
-            <h5>
-                O Agrinho é o principal programa de responsabilidade social do Sistema FAEP (Federação da Agricultura do
-                Estado do Paraná). Operado pelo SENAR-PR em conjunto com a FAEP, conta com ampla parceria do Governo do
-                Paraná (envolvendo várias Secretarias de Estado), prefeituras municipais e diversas empresas e
-                instituições públicas e privadas.
-                Completando 26 anos de atuação (criado em 1995 e implementado em 1996), o programa atinge todos os
-                municípios paranaenses. Anualmente, envolve cerca de 800 mil crianças e mais de 50 mil professores da
-                educação infantil, ensino fundamental e educação especial da rede pública.
-                O Agrinho leva às escolas uma proposta pedagógica inovadora, baseada em uma visão complexa da realidade,
-                na inter e transdisciplinaridade e na pedagogia da pesquisa. Originalmente criado para levar informações
-                sobre saúde e segurança pessoal e ambiental, especialmente a crianças rurais, consolidou-se como uma
-                ferramenta eficaz para abordar temas sociais relevantes nos currículos escolares.
-                Seu material didático exclusivo é fundamentado por especialistas renomados, nacionais e internacionais,
-                de grupos de pesquisa em rede. O programa incentiva a pesquisa, defendendo uma educação crítica,
-                criativa e autônoma, onde professores e alunos se tornam produtores de conhecimento. As atividades são
-                recebidas com grande entusiasmo pela comunidade escolar e vêm se aprimorando em qualidade e criatividade
-                a cada ano.
-            </h5>
+        <!-- Barra de acessibilidade -->
+        <div class="accessibility-toolbar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+            <div class="font-controls">
+                <label for="font-up" class="tool-button">
+                    <span aria-hidden="true">A+</span>
+                    <span class="sr-only">Aumentar fonte</span>
+                </label>
+
+                <label for="font-default" class="tool-button">
+                    <span aria-hidden="true">A</span>
+                    <span class="sr-only">Tamanho padrão</span>
+                </label>
+
+                <label for="font-down" class="tool-button">
+                    <span aria-hidden="true">A-</span>
+                    <span class="sr-only">Diminuir fonte</span>
+                </label>
+            </div>
         </div>
-        <div class="direita">
-            <img class="img-direita" src="camposoja.png" alt="">
-        </div>
+
+        <!-- Cabeçalho -->
+        <header class="cabecalho" role="banner">
+            <div class="logo" role="img" aria-label="Logo do site">🌱</div>
+            <h1 class="titulo">Sobre o Agrinho</h1>
+        </header>
+
+        <!-- Navegação -->
+        <nav class="navegacao" role="navigation" aria-label="Navegação principal">
+            <button class="botao-nav" aria-label="O que é o Agrinho">O que é o Agrinho</button>
+            <button class="botao-nav" aria-label="O que é a Agricultura de Precisão">O que é a Agricultura de Precisão</button>
+            <button class="botao-nav" aria-label="Ferramentas - Da Cidade para o Campo">Ferramentas - Da Cidade para o Campo</button>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <main class="conteudo" role="main">
+            <h2 id="conteudo-principal">O Programa Agrinho</h2>
+            
+            <div class="layout-duas-colunas">
+                <div class="coluna esquerda">
+                    <p>O Agrinho é o principal programa de responsabilidade social do Sistema FAEP (Federação da Agricultura do Estado do Paraná). Operado pelo SENAR-PR em conjunto com a FAEP, conta com ampla parceria do Governo do Paraná (envolvendo várias Secretarias de Estado), prefeituras municipais e diversas empresas e instituições públicas e privadas.</p>
+                    
+                    <p>Completando 26 anos de atuação (criado em 1995 e implementado em 1996), o programa atinge todos os municípios paranaenses. Anualmente, envolve cerca de 800 mil crianças e mais de 50 mil professores da educação infantil, ensino fundamental e educação especial da rede pública.</p>
+                    
+                    <p>O Agrinho leva às escolas uma proposta pedagógica inovadora, baseada em uma visão complexa da realidade, na inter e transdisciplinaridade e na pedagogia da pesquisa. Originalmente criado para levar informações sobre saúde e segurança pessoal e ambiental, especialmente a crianças rurais, consolidou-se como uma ferramenta eficaz para abordar temas sociais relevantes nos currículos escolares.</p>
+                    
+                    <p>Seu material didático exclusivo é fundamentado por especialistas renomados, nacionais e internacionais, de grupos de pesquisa em rede. O programa incentiva a pesquisa, defendendo uma educação crítica, criativa e autônoma, onde professores e alunos se tornam produtores de conhecimento. As atividades são recebidas com grande entusiasmo pela comunidade escolar e vêm se aprimorando em qualidade e criatividade a cada ano.</p>
+                </div>
+                
+                <div class="coluna direita">
+                    <img class="img-direita" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%234CAF50' width='800' height='600'/%3E%3Cpath fill='%23388E3C' d='M0,300 Q200,150 400,300 T800,300 L800,600 L0,600 Z'/%3E%3Ccircle fill='%23FFD700' cx='600' cy='150' r='60'/%3E%3C/svg%3E" alt="Campo agrícola com plantação">
+                </div>
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="rodape" role="contentinfo">
+            <p>&copy; 2025 Emanoelle de Cassia - Colégio Mario Evaldo Morski</p>
+        </footer>
     </div>
 </body>
-
 </html>
