@@ -73,7 +73,7 @@
 
         /* Cabeçalho - cores originais */
         .cabecalho {
-            background-color: #4CAF50; /* Mantido da primeira página */
+            background-color: #3498db; /* Mantido da primeira página */
             color: #ffffff; /* Mantido da primeira página */
             padding: 20px;
             text-align: center;
@@ -112,22 +112,21 @@
         }
 
         .botao-nav {
-            background-color: #4CAF50; /* Mantido da primeira página */
-            color: #ffffff; /* Mantido da primeira página */
+            background-color: #3498db; /* Mantido da primeira página*/
+            color: #ffffff; /*Mantido da primeira página*/
             border: none;
             padding: 12px 24px;
             margin: 0 8px;
             cursor: pointer;
             font-size: 1.1em;
             border-radius: 30px;
-            transition: all 0.3s ease;
+            transition: all 0.3s ease; 
             font-weight: bold;
             min-width: 180px;
         }
 
         .botao-nav:hover {
-            background-color: #388E3C; /* Mantido da primeira página */
-            transform: translateY(-2px);
+            background-color: #3498db; /* Mantido da primeira página */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -142,7 +141,7 @@
         }
 
         .conteudo h2 {
-            color: #388E3C; /* Mantido da primeira página */
+            color: #3498db; /* Mantido da primeira página */
             margin-bottom: 20px;
             font-size: 1.8em;
             border-bottom: 2px solid #4CAF50; /* Mantido da primeira página */
@@ -171,7 +170,7 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 3px solid #4CAF50; /* Mantido da primeira página */
+            border: 3px solid #3498db; /* Mantido da primeira página */
         }
 
         /* Rodapé - cores originais */

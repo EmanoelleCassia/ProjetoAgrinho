@@ -72,7 +72,7 @@ h1 {
 
 .tool-button:hover {
     background: #3a5a80;
-    transform: translateY(-2px);
+    transform: translateY(-2px); 
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -232,6 +232,8 @@ footer {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s;
+    transform: translateY(-2px);
+
 }
 
 /* Rodapé */
